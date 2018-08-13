@@ -24,14 +24,24 @@
         },
         methods:{
             submits(){
+                let That = this;
                 this.$http.getHelloWorld("/api/user/login",{username:this.username,password:this.password})
                         .then(function(rel){
 //                            console.log(rel)
                             if(rel.success == 0){
 //                                this.$route.push()
-                                alert(rel.msg);
+//                                alert(rel.msg);
+//                                console.log(rel)
+                                That.$router.push({
+                                    name:"Home",
+                                    path:"home",
+                                    params:{
+                                        user:rel.user
+                                    }
+                                })
                             }else{
-                                alert(rel.msg);
+//                                alert(rel.msg);
+                                console.log(rel.msg);
                             }
                         })
 
@@ -40,6 +50,6 @@
     }
 </script>
 
-<style>
+<style scoped>
 
 </style>
