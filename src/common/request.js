@@ -1,11 +1,15 @@
 /**
  * Created by Administrator on 2018/8/13.
  */
+import axios from 'axios'
 
-
-export default function (ulr,obj){
+export default function (url,obj){
     return new Promise(function(relove,reject){
-        console.log(1111);
-        relove("string");
+       axios.post(url,obj)
+            .then((rel)=>{
+               relove(rel.data);
+           },(err)=>{
+               reject("3333");
+           })
     })
 }
