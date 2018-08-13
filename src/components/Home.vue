@@ -1,6 +1,6 @@
 <template>
     <div>
-        欢迎[{{ user.name }}]登录
+        欢迎[{{ this.$route.params.user.name }}]登录
     </div>
 </template>
 
@@ -12,10 +12,10 @@
                 user:""
             }
         },
-        mounted(){
-            console.log(this.$route.params)
-            this.user = this.$route.params.user;
-        }
+//        mounted(){
+//            console.log(this.$route.params)
+//            this.user = this.$route.params.user;
+//        }
     }
 
 </script>
