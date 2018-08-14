@@ -42,8 +42,20 @@
     export default {
         data(){
             return{
-                username:this.$route.params.data.name
+                username:""
             }
+        },
+        mounted(){
+              try{
+                 this.name = this.$route.params.data.name
+              }catch(err){
+                  if(window.localStorage.getItem("username")){
+                      this.username = window.localStorage.getItem("username")
+                  }else{
+                      this.username = ".....";
+                  }
+//                  console.log(new Error("用户名信息出错"));
+              }
         },
         components:{
             HeadSearch,

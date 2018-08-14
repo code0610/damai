@@ -82,7 +82,7 @@
                                  .then((rel)=>{
 //                                    console.log(rel)
                                       this.$Message.success("登录成功")
-                                    console.log(rel)
+                                    window.localStorage.setItem("username",rel.user.name)
                                     That.$router.push({
                                         name:"Admin",
                                         params:{
