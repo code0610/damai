@@ -4,8 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import http from './http'
+import iView from 'iview'
+import 'iview/dist/styles/iview.css';
 
 Vue.use(http);
+Vue.use(iView)
 
 Vue.config.productionTip = false
 
