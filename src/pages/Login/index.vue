@@ -74,6 +74,7 @@
         },
         methods:{
             handleSubmit(name) {
+                let That = this;
                 this.$refs[name].validate((valid) => {
                     if (valid) {
 //                        this.$Message.success('Success!');
@@ -81,6 +82,13 @@
                                  .then((rel)=>{
 //                                    console.log(rel)
                                       this.$Message.success("登录成功")
+                                    console.log(rel)
+                                    That.$router.push({
+                                        name:"Admin",
+                                        params:{
+                                            data:rel.user
+                                        }
+                                    })
                                 },(err)=>{
                                      this.$Message.error("登录失败")
                                 })

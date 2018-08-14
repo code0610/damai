@@ -16,7 +16,7 @@ module.exports = function(req){
     //    success = req.body.username;
     //}
 
-    if(req.body.username === "admin" && req.body.password == "123"){//失败
+    if(req.body.username === "admin" && req.body.password == "1234567"){//失败
         success = 1;
         errorCode = "00001";
         msg = "登录失败";
