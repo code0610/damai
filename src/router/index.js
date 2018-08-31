@@ -6,6 +6,7 @@ import Login from "@/pages/Login"
 import Admin from '@/pages/Admin'
 import OrderMenu from '@/components/Order/OrderMenu'
 import MyMsg from "@/components/Order/MyMsg"
+import Index from "@/pages/Index"
 
 Vue.use(Router)
 
@@ -14,7 +15,7 @@ export default new Router({
     {
       path: '/',
       name: 'Login',
-      component: Login
+      component: Index
     },{
       path: '/admin',
       name: "Admin",
