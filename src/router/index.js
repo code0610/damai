@@ -7,16 +7,23 @@ import Admin from '@/pages/Admin'
 import OrderMenu from '@/components/Order/OrderMenu'
 import MyMsg from "@/components/Order/MyMsg"
 import Index from "@/pages/Index"
-
+import Qinzi from "@/pages/qinzi"
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/login',
       name: 'Login',
       component: Index
-    },{
+    },
+    {
+      path: '/',
+      name: 'Qinzi',
+      component: Qinzi
+    },
+    
+    {
       path: '/admin',
       name: "Admin",
       component: Admin,

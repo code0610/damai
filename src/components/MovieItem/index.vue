@@ -18,7 +18,7 @@
 	}
 </script>
 
-<style scoped="scoped">
+<style scope="scoped">
 	.movieItem{
 		width: 130px;
 		height: auto;

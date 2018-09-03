@@ -29,7 +29,7 @@
 	
 </script>
 
-<style scoped="scoped">
+<style scope="scoped">
 	.movies{
 		width: 1200px;
 		margin: 0 auto;
