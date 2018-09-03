@@ -2,7 +2,7 @@
 
 > 基于网络电影，戏剧，赛事等在线信息查询，票务购买平台
 
-## Build Setup
+## 功能介绍
 
 ``` bash
 # install dependencies
