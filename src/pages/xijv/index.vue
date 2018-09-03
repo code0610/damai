@@ -4,7 +4,6 @@
             <Header-top></Header-top>
             <Header-search></Header-search>
             <Tab-and-banner></Tab-and-banner>
-           
     </div>
     
 </template>
