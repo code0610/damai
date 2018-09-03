@@ -1,6 +1,6 @@
-# damai
+# 大觅网（实测版）
 
-> A Vue.js project
+> 基于网络电影，戏剧，赛事等在线信息查询，票务购买平台
 
 ## Build Setup
 
