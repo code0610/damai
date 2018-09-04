@@ -6,10 +6,10 @@
 
 ``` bash
 # 戏剧模块
-npm install
+npm run build
 
 # 体育模块
-npm run dev
+npm run build
 
 # 亲子
 npm run build
