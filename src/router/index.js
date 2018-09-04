@@ -9,12 +9,17 @@ import MyMsg from "@/components/Order/MyMsg"
 import Index from "@/pages/Index"
 import xijv from "@/pages/xijv"
 import InterfaceTest from "@/pages/InterfaceTest"
+import Register from "@/pages/Register"
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
+      path: '/',
+      name: 'Register',
+      component: Register
+    },{
       path: '/',
       name: 'Login',
       component: InterfaceTest
