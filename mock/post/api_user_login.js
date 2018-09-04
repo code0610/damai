@@ -1,8 +1,9 @@
 /**
+ * 登录接口
  * Created by Administrator on 2018/8/13.
  */
 module.exports = function(req){
-    let success = 0;//0 �ɹ�   1ʧ��
+    let success = 0;//0 成功   1 失败
     let errorCode = "00000";
     let msg = "登录成功";
     let user = {

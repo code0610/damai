@@ -5,7 +5,9 @@
 			<a class="movies_tab_todo" href="javascript:void(0)">即将开售</a>
 		</div>
 		<div class="movies_today">
-			<Movie-item v-for="item in testData"></Movie-item>
+			<div v-for="item in testData">
+				<Movie-item></Movie-item>
+			</div>
 		</div>
 		<div class="movies_todo">
 			
