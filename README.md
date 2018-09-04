@@ -5,17 +5,22 @@
 ## 功能介绍
 
 ``` bash
-# install dependencies
+# 戏剧模块
 npm install
 
-# serve with hot reload at localhost:8080
+# 体育模块
 npm run dev
 
-# build for production with minification
+# 亲子
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+# 舞蹈古典
+npm run build
+
+# 摇滚
+npm run build
+
+# 会员中心
+npm run build
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
