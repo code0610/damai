@@ -22,7 +22,7 @@
                   <row>
                       <Col span="16">
                           <Input type="text" v-model="formCustom.SMS" placeholder="请输入验证码">
-                              <Icon type="ios-lock-outline" slot="prepend"></Icon>
+                              <Icon type="logo-twitch"  slot="prepend"/>
                           </Input>
                       </Col>
                       <Col span="4" class="intifyingCode">
