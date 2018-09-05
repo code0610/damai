@@ -3,7 +3,7 @@
 		<Samebox>
 			<div class="icon-yourlike" slot="titleimg"></div>
 			<div class="itembox" slot="others">
-				<Itemyourlike  v-for="item in testData">
+				<Itemyourlike  v-for="item in testData" :key="item">
 					<img :src="youlikeImg" alt="" slot="img" class="itemimg"/>
 					<p slot="title">fdvcv</p>
 					<p slot="price">dbcvb</p>
