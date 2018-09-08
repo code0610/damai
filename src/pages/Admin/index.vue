@@ -3,13 +3,13 @@
   .text-indent{text-indent: 20px;}
   .admin_cont{
     width: 100%;
-    height:555px;
+    height:600px;
     background:#fbfafa;
     border-top:2px solid red;
   }
   .admin_cont>div:nth-child(1){
     width: 1170px;
-    height:500px;
+    height:550px;
     background:#FFF;
     margin:2% auto;
   }
