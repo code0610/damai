@@ -6,6 +6,7 @@ import Login from "@/pages/Login"
 import Admin from '@/pages/Admin'
 import OrderMenu from '@/components/Order/OrderMenu'
 import MyMsg from "@/components/Order/MyMsg"
+import Purchasers from '@/components/Order/Purchasers'
 import Index from "@/pages/Index"
 import Qinzi from "@/pages/qinzi"
 import xijv from "@/pages/xijv"
@@ -25,7 +26,7 @@ export default new Router({
       name: 'Qinzi',
       component: Qinzi
     },
-    
+
     {
       path: '/',
       name: 'Register',
@@ -50,6 +51,10 @@ export default new Router({
         path:"mymsg",
         name: 'MyMsg',
         component: MyMsg
+      },{
+        path: 'purchasers',
+        name: 'Purchasers',
+        component: Purchasers
       }]
     },
     {
