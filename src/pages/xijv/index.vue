@@ -13,23 +13,17 @@
     import HeaderTop from "@/components/HeadTop";
     import HeaderSearch from "@/components/HeadSearch";
     import TabAndBanner from "./TabAndBanner";
-	
 
     export default {
-        name:"xijv",
-        data(){
-            return{
-
-            }
-        },
-        components:{
-            HeaderTop,
-            HeaderSearch,
-            TabAndBanner
-         
-
-            
-        }
+    name: "xijv",
+    data() {
+        return {};
+    },
+    components: {
+        HeaderTop,
+        HeaderSearch,
+        TabAndBanner
     }
+    };
 </script>
 
