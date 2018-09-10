@@ -28,6 +28,7 @@
                 </Tabs>
             </div>
         </div>
+        <Foot-web/>
     </div>
 
 </template>
@@ -54,6 +55,7 @@
 
 <script>
     import HeadSimper from "@/components/HeadSimper/HeadSimper"
+    import FootWeb from "@/components/FootWeb"
     export default {
         data(){
             return{
@@ -100,6 +102,7 @@
         },
         components:{
             HeadSimper,
+            FootWeb
         }
     }
 
