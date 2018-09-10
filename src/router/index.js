@@ -7,6 +7,8 @@ import Admin from '@/pages/Admin'
 import OrderMenu from '@/components/Order/OrderMenu'
 import MyMsg from "@/components/Order/MyMsg"
 import Purchasers from '@/components/Order/Purchasers'
+import AddPurchaser from '@/components/Order/AddPurchaser'
+import TablePurchaser from '@/components/Order/tablePurchaser'
 import Index from "@/pages/Index"
 import Qinzi from "@/pages/qinzi"
 import xijv from "@/pages/xijv"
@@ -54,7 +56,18 @@ export default new Router({
       },{
         path: 'purchasers',
         name: 'Purchasers',
-        component: Purchasers
+        component: Purchasers,
+        children:[
+          {
+            path:"",
+            name:"TablePurchaser",
+            component:TablePurchaser
+          },
+          {
+          path:"addpurchaser",
+          name:"AddPurchaser",
+          component:AddPurchaser
+        }]
       }]
     },
     {
