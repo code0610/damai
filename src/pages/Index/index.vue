@@ -39,7 +39,8 @@
 	import Movies from "./Movies";
 	import GoodsShow from "./GoodsShow";
 	import HotShowList from "./HotShowList";
-	import FootWeb from "@/components/FootWeb";
+//	import FootWeb from "@/components/FootWeb";
+	import FootWeb from "@/components/AdminFoot"
 	export default{
 		name: "Index",
 		data:function(){
