@@ -4,50 +4,63 @@
 			<div class="tabAndBanner_cont_tab">
 				<ul>
 					<li class="allTab"><a href="javascript:void(0)">全部商品分类</a></li>
-					<li @click="changePage('xijv')"><a href="javascript:void(0)">戏剧</a></li>
-					<li @click="changePage('tiyu')"><a href="javascript:void(0)">体育</a></li>
+					<!--<li @click="changePage('xijv')"><a href="javascript:void(0)">戏剧</a></li>
+					<li><a href="javascript:void(0)">体育</a></li>
 					<li @click="changePage('qinzi')"><a href="javascript:void(0)">亲子</a></li>
-					<li @click="changePage('wdgd')"><a href="javascript:void(0)">舞蹈古典</a></li>
-					<li @click="changePage('yg')"><a href="javascript:void(0)">摇滚</a></li>
+					<li><a href="javascript:void(0)">舞蹈古典</a></li>
+					<li><a href="javascript:void(0)">摇滚</a></li>-->
+					<li v-for="(item,index) in tabData" :class="{allTab:item.isShow}" @click="changePage(item.toUrl,index)"><a href="javascript:void(0)">{{item.name}}</a></li>
 				</ul>
 			</div>
 			<div class="tabAndBanner_cont_banner">
 				<Carousel autoplay v-model="value1" loop>
 			        <CarouselItem>
 			            <div class="demo-carousel">
-			            	<img src="../image/pic1.jpg"  />
+			            	<img src="./image/pic1.jpg"  />
 			            </div>
 			        </CarouselItem>
 			        <CarouselItem>
 			            <div class="demo-carousel">
-			            	<img src="../image/pic2.jpg"  />
+			            	<img src="./image/pic2.jpg"  />
 			            </div>
 			        </CarouselItem>
 			        <CarouselItem>
 			            <div class="demo-carousel">
-			            	<img src="../image/pic3.jpg"  />
+			            	<img src="./image/pic3.jpg"  />
 			            </div>
 			        </CarouselItem>
 			    </Carousel>
 			</div>
 			<div class="tabAndBanner_bottom"></div>
 		</div>
+		<!--<div>{{ stores }}</div>-->
 	</div>
 </template>
 
 <script>
+	import store from "@/vuex/store"
 	export default{
 		name: "TabAndBanner",
 		data:function(){
 			return {
-				value1: 0
+				value1: 0,
+				tabData:[],
+//				stores:store.state.count
 			}
 		},
 		methods:{
-			changePage(e){
-				console.log(111111,e)
-				 this.$router.push("/"+e) 
+			changePage(e,index){
+				 this.$router.push(e);
+				 this.tabData.forEach(function(v,i){
+				 	v.isShow = false;
+				 })
+				 this.tabData[index].isShow = true;
 			}
+		},
+		created:function(){
+//			console.log(1111,store)
+			this.tabData = store.state.tabData;
+			
 		}
 	}
 </script>

@@ -2,7 +2,7 @@
     <div class="headTop">
         <div class="headTop_cont">
             <!--<span>Hi,欢迎[<span>{{ username }}</span>，<span>退出</span>]登录</span>-->
-            <div class="headTop_cont_left">HI，欢迎来大麦[<span>登录</span><span>注册</span>]
+            <div class="headTop_cont_left">HI，欢迎来大麦[<span class="span_l" @click="login()">登录</span><span class="span_r" @click="register()">注册</span>]
             	<select>
             		<option>我的大麦</option>
             	</select>
@@ -26,7 +26,15 @@
 
     export default {
         name: "HeadTop",
-        props:["username"]
+        props:["username"],
+        methods:{
+        	login:function(){
+        		this.$router.push("/login")
+        	},
+        	register:function(){
+        		this.$router.push("/register")
+        	}
+        }
     }
 
 </script>
@@ -51,5 +59,12 @@
     }
     .headTop_cont .headTop_cont_right{
     	margin-right: 50px;
+    }
+    .span_l{
+    	margin-right: 5px;
+    	cursor: pointer;
+    }
+    .span_r{
+    	cursor: pointer;
     }
 </style>

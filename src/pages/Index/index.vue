@@ -35,7 +35,7 @@
 <script>
 	import HeaderTop from "@/components/HeadTop";
 	import HeaderSearch from "@/components/HeadSearch";
-	import TabAndBanner from "./TabAndBanner";
+	import TabAndBanner from "@/components/TabAndBanner";
 	import Movies from "./Movies";
 	import GoodsShow from "./GoodsShow";
 	import HotShowList from "./HotShowList";

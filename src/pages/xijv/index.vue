@@ -12,7 +12,7 @@
 <script>
     import HeaderTop from "@/components/HeadTop";
     import HeaderSearch from "@/components/HeadSearch";
-    import TabAndBanner from "./TabAndBanner";
+    import TabAndBanner from "@/components/TabAndBanner";
 
     export default {
     name: "xijv",

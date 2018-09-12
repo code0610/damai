@@ -17,6 +17,7 @@ import Register from "@/pages/Register"
 Vue.use(Router)
 
 export default new Router({
+	mode:"history",
   routes: [
     {
       path: '/',
@@ -28,7 +29,6 @@ export default new Router({
       name: 'Qinzi',
       component: Qinzi
     },
-
     {
       path: '/register',
       name: 'Register',
@@ -36,7 +36,7 @@ export default new Router({
     },{
       path: '/login',
       name: 'Login',
-      component: InterfaceTest
+      component: Login
     },{
       path: '/admin',
       name: "Admin",

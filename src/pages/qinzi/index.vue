@@ -2,8 +2,9 @@
 	<div class="qinzi">
 		<Header-top></Header-top>
     	<Header-search></Header-search>
-		<Tab></Tab>
-		<Lunbo></Lunbo>
+		<!--<Tab></Tab>
+		<Lunbo></Lunbo>-->
+		<Tab-and-banner></Tab-and-banner>
 		<Yourlike></Yourlike>
 		<Wonderful></Wonderful>
 		<Hot></Hot>
@@ -14,8 +15,9 @@
 <script>
 	import HeaderTop from "@/components/HeadTop";
 	import HeaderSearch from "@/components/HeadSearch";
-	import Tab from "./tabqinzi";
-	import Lunbo from "./lunbo";
+//	import Tab from "./tabqinzi";
+//	import Lunbo from "./lunbo";
+	import TabAndBanner from "@/components/TabAndBanner";
 	import Yourlike from "./yourlike";
 	import Hot from "./hot";
 	import Wonderful from "./wonderful";
@@ -30,8 +32,9 @@
 		components:{
 			HeaderTop,
 			HeaderSearch,
-			Tab,
-			Lunbo,
+//			Tab,
+//			Lunbo,
+			TabAndBanner,
 			Yourlike,
 			Wonderful,
 			Hot,
