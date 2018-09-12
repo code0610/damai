@@ -9,7 +9,11 @@
 export default {
   name: 'App',
   mounted:function(){
-  	this.$router.push("/")
+//	this.$router.push("/")
+//		var username = window.localStorage.getItem("username");
+//		if(username){
+			this.$router.push("/")
+//		}
   }
 }
 </script>

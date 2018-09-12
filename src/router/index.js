@@ -17,7 +17,7 @@ import Register from "@/pages/Register"
 Vue.use(Router)
 
 export default new Router({
-	mode:"history",
+  mode:"history",
   routes: [
     {
       path: '/',
@@ -41,9 +41,10 @@ export default new Router({
       path: '/admin',
       name: "Admin",
       component: Admin,
-      children:[{
+      children:[
+      {
         path:"",
-        name:"OrderMenu",
+        name:"OrderMenu2",
         component:OrderMenu
       },{
         path: 'ordermenu',

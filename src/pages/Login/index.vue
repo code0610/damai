@@ -86,7 +86,7 @@
                                       this.$Message.success("登录成功")
                                     window.localStorage.setItem("username",rel.user.name)
                                     That.$router.push({
-                                        name:"Admin",
+                                        name:"OrderMenu2",
                                         params:{
                                             data:rel.user
                                         }
