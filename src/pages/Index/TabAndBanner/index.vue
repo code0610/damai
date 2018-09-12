@@ -5,10 +5,10 @@
 				<ul>
 					<li class="allTab"><a href="javascript:void(0)">全部商品分类</a></li>
 					<li @click="changePage('xijv')"><a href="javascript:void(0)">戏剧</a></li>
-					<li><a href="javascript:void(0)">体育</a></li>
-					<li><a href="javascript:void(0)">亲子</a></li>
-					<li><a href="javascript:void(0)">舞蹈古典</a></li>
-					<li><a href="javascript:void(0)">摇滚</a></li>
+					<li @click="changePage('tiyu')"><a href="javascript:void(0)">体育</a></li>
+					<li @click="changePage('qinzi')"><a href="javascript:void(0)">亲子</a></li>
+					<li @click="changePage('wdgd')"><a href="javascript:void(0)">舞蹈古典</a></li>
+					<li @click="changePage('yg')"><a href="javascript:void(0)">摇滚</a></li>
 				</ul>
 			</div>
 			<div class="tabAndBanner_cont_banner">
@@ -45,7 +45,8 @@
 		},
 		methods:{
 			changePage(e){
-				 this.$router.push(e) 
+				console.log(111111,e)
+				 this.$router.push("/"+e) 
 			}
 		}
 	}

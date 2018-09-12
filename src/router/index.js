@@ -19,22 +19,22 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/login',
-      name: 'Login',
+      path: '/',
+      name: 'Index',
       component: Index
     },
     {
-      path: '/',
+      path: '/qinzi',
       name: 'Qinzi',
       component: Qinzi
     },
 
     {
-      path: '/',
+      path: '/register',
       name: 'Register',
       component: Register
     },{
-      path: '/',
+      path: '/login',
       name: 'Login',
       component: InterfaceTest
     },{
